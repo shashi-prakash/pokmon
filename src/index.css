@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ----------------------Global variables declarations start-------------- */
+
+:root {
+  --fontFamily : "Roboto", sans-serif;
+  --primaryColor : #64b5f6;
+  --primaryLightColor :#76abd7f0;
+}
+
+/* ----------------------Global variables declarations end---------------- */
+
+body {
+  font-family: var(--fontFamily)  !important;
+}
+
+/* ----------------------removing shadow from field ---------------------- */
+.btn:focus,
+input {
+  box-shadow: none !important;
+}
+
+a{
+  text-decoration: none !important;
+  color: var(--primaryColor) !important;
+}
+.btn{
+  background-color: var(--primaryColor);
+}
+.form-control {
+  border-radius: 0rem !important;
+  padding: 0.6rem 0.75rem !important;
+}
+
+.hover-effects:hover {
+  cursor: pointer;
+}
+
+/* -----------------------loader style start--------------------------------- */
+
+.loader-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+}
+
+/* -----------------------loader style end--------------------------------- */
+
+/* -----------------------more prev button style---------------------------- */
+
+.prev-nextButton-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goBackButton:hover a{
+  cursor: pointer;
+  color:  var(--primaryLightColor) !important;
+}
+
+.all-list-section{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.card{
+  border-color: var(--primaryColor) !important;
+  background-color: var(--primaryColor) !important;
+}
